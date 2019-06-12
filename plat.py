@@ -14,4 +14,5 @@ from platform import system
 def adb_path():
     os = system().lower()
     _path = path.dirname(__file__)
-    return _path + '/adb/' + os + '/platform-tools/'
+    #return _path + '/adb/' + os + '/platform-tools/'
+    return '/Users/nestordu/Library/Android/sdk/platform-tools/'

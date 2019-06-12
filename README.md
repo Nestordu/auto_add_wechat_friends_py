@@ -1,3 +1,7 @@
+目前已支持微信7.0.4
+
+----- 以下为原readme 
+
 # auto_add_wechat_friends_py
 
 > 微信自动发送添加好友请求脚本 python
