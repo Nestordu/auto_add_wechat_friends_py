@@ -181,9 +181,9 @@ class Main:
                 self._adb.adb_put_back()
                 self._adb.adb_put_back()
             elif self._adb.find_nodes_by_text('发送'):
-                self._adb.adb_keyboard('67')
-                self._adb.adb_keyboard('67')
-                self._adb.adb_keyboard('67')
+                # self._adb.adb_keyboard('67')
+                # self._adb.adb_keyboard('67')
+                # self._adb.adb_keyboard('67')
                 self._adb.click_by_text('发送')
                 self._adb.refresh_nodes()
                 if self._adb.find_nodes_by_text('添加到通讯录'):
@@ -228,7 +228,6 @@ class Main:
             self._adb.adb_put_back()
         elif self._adb.find_nodes_by_text('操作过于频繁，请稍后再试'):
             print('  <== 操作过于频繁，请稍后再试 <==  ')
-            self._adb.adb_put_back()
             return 1
         # elif self._adb.find_nodes_by_text('搜索:'+phone):
         #     print('  <== 该用户不存在  ')
@@ -258,5 +257,5 @@ class Main:
                 self.add_friends(str(line))
 
         # 输出最后的添加结果
-        #self._file.dump(self._success, 'success')
-        #self._file.dump(self._failed, 'failed')
+        self._file.dump(self._success, 'success')
+        self._file.dump(self._failed, 'failed')
