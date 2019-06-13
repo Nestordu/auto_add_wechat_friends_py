@@ -1,5 +1,5 @@
 {
-	"mode": "loop",
+	"mode": "file",
 	"account": ["+8617376509219", "xiaomihehuo"],
 	"loop": [13029620003, 13029620016],
 	"file": "/data/name.txt",
