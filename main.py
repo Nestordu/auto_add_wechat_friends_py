@@ -38,7 +38,7 @@ class Main:
         self._account = self._json['account']
         # 累计查找结果达到指定个数 会从内存写入到文件
         self._dump = self._json['dump']
-        # 切换账号达到一定次数 会休眠 单位分钟
+        # 搜索前的休眠时间 (s)
         self._sleep = self._json['sleep']
         # 切换账号指定次数
         self._sleep_flag = self._json['sleep-flag']
@@ -82,7 +82,7 @@ class Main:
 
         # 输入号码
         self._adb.adb_input(phone)
-        
+        time.sleep(self._sleep)
         # 点击搜索
         self._adb.click_by_text_after_refresh('搜索:' + phone)
         self._adb.click_by_text(phone)

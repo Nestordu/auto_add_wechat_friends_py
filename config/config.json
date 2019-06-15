@@ -4,6 +4,6 @@
 	"loop": [13029620003, 13029620016],
 	"file": "/data/name.txt",
 	"dump": 10,
-	"sleep": 30,
+	"sleep": 5,
 	"sleep-flag": 4
 }
