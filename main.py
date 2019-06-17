@@ -62,7 +62,6 @@ class Main:
 
     def add_friends(self, phone: str):
         print('===== 开始查找 ===== ' + phone + ' =====')
-        # phone = '18638829527'
         if self._adb.find_nodes_by_text('微信号/手机号'):
             self._adb.click_by_text('微信号/手机号')
         else:
